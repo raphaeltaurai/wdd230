@@ -1,7 +1,7 @@
 /* Import Google Fonts API */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Almarai&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 /* Apply color scheme and typography */
 body {
   display: grid;
@@ -23,6 +23,7 @@ h3, h2 {
 a {
   color: #0066cc;
   text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
 }
 
 a:hover {
