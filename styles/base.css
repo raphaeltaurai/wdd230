@@ -1,6 +1,7 @@
 /* Import Google Fonts API */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Almarai&family=Roboto&display=swap');
 /* Apply color scheme and typography */
 body {
   display: grid;
@@ -15,7 +16,9 @@ body {
 
 h3, h2 {
   text-align: center;
+  font-family: 'Roboto', sans-serif;
 }
+
 
 a {
   color: #0066cc;
@@ -31,7 +34,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgb(50, 50, 126);
+  background: navy;
   padding: 2rem;
   grid-column: 1 / 3;
 }
@@ -66,32 +69,30 @@ nav a:hover {
 }
 
 main {
-  background:white;
   height: 330px;
   padding: 1rem;
-  color: navy;
-
+  color:black
 }
 
 h3 {
-    background-color: grey;
+    background-color: navy;
+    color:white;
 }
 
-.section-title {
-  display: flex;
-  align-items: center;
-  color: white;
+.card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
 }
 
-.section-title::after {
-  content: '';
-  flex-grow: 1;
-  border-bottom: 1px solid white;
-  margin-left: 1rem;
+.card h3 {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 footer {
-  background: rgb(31, 30, 30);
+  background: black;
   padding: 2rem;
   text-align: center;
   grid-column: 1 / 3;
