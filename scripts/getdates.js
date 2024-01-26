@@ -1,15 +1,9 @@
-document.addEventListener("DOMContentLoaded", function() {
-    // Get the current year
-    var currentYear = new Date().getFullYear();
-  
-    // Update the copyright text
-    var copyRights = document.getElementById("copyRights");
-    copyRights.textContent += " " + currentYear;
-  
-    // Get the last modified date
-    var lastModifiedText = document.getElementById("lastModified");
-    var lastModified = document.lastModified;
-  
-    // Update the last modified date text
-    lastModifiedText.textContent = "Last modified: " + lastModified;
-  });
+document.addEventListener('DOMContentLoaded', function () {
+  // Get the current year and update the first paragraph in the footer
+  var currentYear = new Date().getFullYear();
+  document.querySelector('footer p:first-child').innerHTML = '&copy; ' + currentYear+'<br>🤓Raphael Shawn Taurai <br><br>Zimbabwe<br> <img src="images/zim-fly-flag.jpg" alt="Zimbabwe Fly Flag" width="80" height="60">';
+
+  // Get the last modified date and update the second paragraph in the footer
+  var lastModifiedDate = document.lastModified;
+  document.getElementById('lastModified').innerText = 'Last Modified: ' + lastModifiedDate;
+});
