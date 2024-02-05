@@ -16,7 +16,7 @@ body {
   padding: 0;
 }
 
-img {
+header img {
   height: 100px;
   width: 97px;
   border-radius: 10%;
@@ -131,6 +131,12 @@ footer p {
   text-align: center;
 }
 
+.card img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
 h2 {
   margin-top: 30px;
   text-align: center;
@@ -157,44 +163,6 @@ hr {
   content: counter(my-counter, decimal-leading-zero) ": ";
   color: #333;
   margin-right: 5px;
-}
-
-@media screen and (max-width: 599px) {
-  main {
-      grid-template-columns: 1fr;
-  }
-
-  .card {
-      width: 80%;
-      max-width: 100%;
-      grid-column: auto;
-      margin: 0 auto;
-  }
-}
-
-@media screen and (min-width: 600px) and (max-width: 899px) {
-  main {
-      grid-template-columns: repeat(2, 1fr);
-  }
-
-  .card {
-      max-width: 100%;
-      grid-column: auto;
-      margin: 0 auto;
-  }
-
-
-  .card:nth-child(3) {
-      grid-column: span 2;
-      max-width: 100%;
-      width: 100%;
-  }
-}
-
-@media screen and (min-width: 900px) {
-  main {
-      grid-template-columns: repeat(3, 1fr);
-  }
 }
 
 

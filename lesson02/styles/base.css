@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: black;
+    margin: 0;
+}
+
+header {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid ;
+    padding: 20px;
+    text-align: left;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.card h2 {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 0;
+    font-weight: bold;
+}
+
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+@media screen and (max-width: 599px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        width: 80%;
+        max-width: 100%;
+        grid-column: auto;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 899px) {
+    main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+        max-width: 100%;
+        grid-column: auto;
+        margin: 0 auto;
+    }
+
+
+    .card:nth-child(3) {
+        grid-column: span 2;
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    main {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
