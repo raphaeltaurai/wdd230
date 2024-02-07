@@ -203,6 +203,7 @@ hr {
 
 #menu::before {
   content: "☰";
+  color:#fff;
 }
 
 #menu.open::before {
