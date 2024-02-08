@@ -7,14 +7,14 @@
         --rich-black: #001219ff;
         --midnight-green: #005f73ff;
         --dark-cyan: #0a9396ff;
-        --tiffany-blue: #94d2bdff;
+        --tiffany-blue: #409278;
 
 }
 
 body {
     font-family: var(--heading-font);
     font-size: large;
-    background-color: #f5f5f5;
+    background-color: rgba(7, 5, 5, 0.11);
     color: #333;
     margin: 0;
     padding: 0;
@@ -83,6 +83,7 @@ footer p {
 }
 
 .card {
+    font-weight: bold;
     border-radius: 10px;
     width: 100%;
     max-width: 700px;
